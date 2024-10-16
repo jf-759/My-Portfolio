@@ -18,7 +18,7 @@ html{
     border-radius: 50px 50px 50px 50px;
 }
 
-.main-nav{
+.main_nav{
 
     display: flex;
     flex-direction: row;
@@ -32,25 +32,25 @@ html{
     
 }
 
-.nav-home{
+.nav_home{
     text-decoration: none;
     color: #C37C4D;
     padding: 20px;
 }
 
-.nav-about{
+.nav_about{
     text-decoration: none;
     color: #C37C4D;
     padding: 20px;
 }
 
-.nav-projects{
+.nav_projects{
     text-decoration: none;
     color: #C37C4D;
     padding: 20px;
 }
 
-.nav-contact{
+.nav_contact{
     text-decoration: none;
     color: #C37C4D;
     padding: 20px;
