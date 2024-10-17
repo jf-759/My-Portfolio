@@ -15,7 +15,38 @@ html{
     font-size: 35px;
     background-color: #D8E2DC;
     color: #a8531e;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.hello_note{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: auto;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(39, 121, 59);
+}
+
+.thankyou_note{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 121, 59);
+    font-size: 20px;
 }
 
 .main_nav{
@@ -28,7 +59,9 @@ html{
     justify-content: space-between;
     align-self: baseline;
     font-family: Arial, Helvetica, sans-serif;
-
+    text-decoration: none;
+    color: #007bff;
+    font-size: 28px;
     
 }
 
@@ -56,3 +89,198 @@ html{
     padding: 20px;
 }
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 25px;
+    padding: 50px;
+    
+}
+
+form, label > * {
+
+    margin: 0 1rem;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto; 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+
+.grid a{
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    height: 100%;
+    width: 100%;
+}
+
+
+.welcome_page, .about_me, .my_projects, .contact_me {
+    background-color: #f5e6d4;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    color: #333;
+}
+
+.welcome_page:hover, .about_me:hover, .my_projects:hover, .contact_me:hover {
+    transform: scale(1.05); 
+}
+
+.welcome_page {
+    grid-column: span 2; 
+    background-image: url(suv.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    transition: 1000ms;
+}
+
+
+.my_projects {
+    grid-column: span 2;
+    background-image: url(lighthouse.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    transition: 2000ms;
+}
+
+.about_me{
+    grid-column: span 2;
+    background-image: url(polaroid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    transition: 1500ms;
+    
+}
+
+.contact_me{
+    grid-column: span 2;
+    background-image: url(wine.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    transition: 2500ms;
+}
+
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.intro_paragraph_1{
+
+    padding: 5%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 30px 0px;
+    display: block;
+    unicode-bidi: isolate;
+    font-size: 100%;
+    width: 650px;
+    justify-content: flex-end;
+    align-items: baseline;
+    float: left;
+    background-color: #64caab66;
+    color: rgb(47, 39, 39);
+    border-radius: 40px;
+
+}
+
+.intro_paragraph_2{
+
+    padding: 5%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 30px 0px;
+    display: block;
+    unicode-bidi: isolate;
+    font-size: 100%;
+    width: 650px;
+    justify-content: flex-start;
+    align-items: baseline;
+    float: right;
+    background-color: #7fc5eb66;
+    color: rgb(47, 39, 39);
+    border-radius: 40px;
+
+}
+
+.diamond-head img{
+
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    float: left;
+
+}
+
+.bubbles_1{
+
+    display: flex;
+    margin: 20px;
+    padding: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.bubbles_2{
+
+    display: flex;
+    margin: 20px;
+    padding: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bubbles_3{
+    display: flex;
+    margin: 20px;
+    padding: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bubbles_4{
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
